@@ -3,6 +3,8 @@
 <title>Think In Code</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -10,6 +12,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <link rel="stylesheet" href="css/styles.css">
 <body>
 
@@ -19,28 +23,27 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
+    <a href="#home" class="w3-bar-item w3-button">INICIO</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> NOSOTROS</a>
+    <a href="#paginasWeb" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PAGINAS WEB</a>
+    <a href="#aplicacionesAndroid" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-android"></i> APLICACIONES ANDROID</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">NOSOTROS</a>
+    <a href="#paginasWeb" class="w3-bar-item w3-button" onclick="toggleFunction()">PAGINAS WEB</a>
+    <a href="#aplicacionesAndroid" class="w3-bar-item w3-button" onclick="toggleFunction()">APLICACIONES ANDROID</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Think<span class="w3-hide-small"> in </span>Code</span>
+    <img src="img/logo.png" class="w3-center w3-opacity" style="width:550px;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> Think in Code </span>
   </div>
 </div>
 
@@ -67,15 +70,15 @@
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PAGINAS WEB</span>
+    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">PAGINAS WEB</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <p class="w3-center"><em>Te ofrecemos la mejor manera de llegar a tus clientes y hacer nuevos. Nuestras paginas tienen un diseño que se adapta para celulares y tablets asi nadie se va a perder tu negocio o marca.</em></p><br>
+<div class="w3-content w3-container w3-padding-64" id="paginasWeb">
+    <p class="w3-center">Te ofrecemos la mejor manera de llegar a tus clientes y hacer nuevos. Nuestras paginas tienen un diseño que se adapta para celulares y tablets asi nadie se va a perder tu negocio o marca.</p><br>
 
-    <div class="container">
+    <div class="container" style="display:inline;">
       <div class="row">
         <div class="col-sm-6">
           <i class="fa fa-child"></i>
@@ -93,45 +96,75 @@
         </div>
       </div>
     </div>
+    <button class="w3-button w3-white w3-border" style="float:right;">Ver mas.</button>
+</div>
+
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">APLICACIONES ANDROID</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="aplicacionesAndroid">
+  <p class="w3-center">Si queres llegar a millones de personas todo el tiempo o queres darle vida a esa nueva idea que pensaste imposible para tu empresa nosotros somos los indicados para llevar adelante tu idea.</p>
+
+  <div class="container" style="display:inline;">
+    <div class="row">
+      <div class="col-sm-6">
+        <i class="material-icons">store</i>
+        <p>Convertite en el negocio con mas prescencia de todos entre tus competidores</p>
+        <i class="material-icons">work</i>
+        <p>Aumenta la calidad del trabajo de tus empleados con una aplicacion que los ayude dia a dia.</p>
+      </div>
+      <div class="col-sm-6">
+        <i class="material-icons">supervisor_account</i>
+        <p>Crea una comunidad entre tus clientes haciendo que interactuen con tu empresa y entre ellos.</p>
+        <i class="material-icons">shopping_cart</i>
+        <p>Fideliza a tu clientela con ofertas y promociones unicas a traves de una app.</p>
+      </div>
+    </div>
+  </div>
+  <button class="w3-button w3-white w3-border" style="float:right;">Ver mas.</button>
 
 </div>
 
+
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-4 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+     <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">CONTACTENOS</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
       <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+      <div id="googleMap" class="w3-round-large" style="width:100%;height:400px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52989.52423201609!2d-60.60044919011625!3d-33.89363874606327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b84aad3ef60a31%3A0x481ac3277962e9c5!2sPergamino%2C+Provincia+de+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1506908262534" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Pergamino, Buenos Aires.<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: Contacto@Thinkincode.com.ar<br>
+        <a href="https://www.facebook.com/thinkincode"><i class="fa fa-facebook-official  fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Thinco <br></a>
+        <a href="https://twitter.com/Think_In_Code"><i class="fa fa-twitter  fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> @Think_In_Code <br></a>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <p>Dejanos un mensaje y nos contactaremos contigo:</p>
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
           </div>
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
           </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message">
         <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <i class="fa fa-paper-plane"></i> Enviar
         </button>
       </form>
     </div>
@@ -139,26 +172,33 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<footer class="w3-center w3-black w3-padding-5 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class=""><i class="fa fa-arrow-up w3-margin-right"></i>Subir</a>
 </footer>
 
-<!-- Add Google Maps -->
-<link rel="javascript" href="js/funciones.js">
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+<script type="text/javascript">
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
 
+</script>
+
+<!-- Add Google Maps -->
 </body>
 </html>

@@ -22,35 +22,49 @@ body, html {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("../img/developer02.jpg");
+    background-image: url("../img/developer04.jpg");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("../img/developer03.jpg");
+    background-image: url("../img/developer05.jpg");
     min-height: 400px;
 }
-
+.bgimg-4{
+    background-image: url("../img/contacto.jpg");
+    min-height: 400px;
+}
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
+a:hover{
+  text-decoration: none;
+}
 
+#home > div > img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #home > div > span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   font-size: 30pt !important;
 }
-#about >img{
-  display: inline-block;
-}
 
-#portfolio > .container > .row > .col-sm-6 i{
+
+.w3-container > .container > .row > .col-sm-6 i{
   font-size: 64px;
   margin: auto;
   display: block;
   text-align: center;
 }
-#portfolio > .container > .row > .col-sm-6 p{
+.w3-container > .container > .row > .col-sm-6 p{
   text-align: center;
 }
 /* Turn off parallax scrolling for tablets and phones */
