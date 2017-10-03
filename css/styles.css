@@ -7,7 +7,7 @@ body, html {
 
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,9 +40,12 @@ body, html {
 a:hover{
   text-decoration: none;
 }
-
+#home > div {
+  width: 100%;height: auto;
+}
 #home > div > img{
   position: absolute;
+  width: 40%;height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -54,22 +57,42 @@ a:hover{
   transform: translate(-50%, -50%);
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
-  font-size: 30pt !important;
+  font-size: 30pt;
+}
+.boton{
+  float:right;
+  margin-top:25px;
 }
 
-
-.w3-container > .container > .row > .col-sm-6 i{
+.w3-container > .container i{
   font-size: 64px;
   margin: auto;
   display: block;
   text-align: center;
 }
-.w3-container > .container > .row > .col-sm-6 p{
+.w3-container > .container p{
   text-align: center;
 }
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
+    .bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4{
+      background-attachment: scroll;
+    }
+    #home > div > img{
+      width: 100%;
+    }
+    #home > div > span{
+      font-size: 27px !important;
+    }
+    .bgimg-3 > div > span , .bgimg-4 > div > span{
+      font-size: 25px !important;
+    }
+    .bgimg-4{
+      background-position: 25% center;
+    }
+    .boton{
+      display: block;
+      margin: auto;
+      float: none;
     }
 }
