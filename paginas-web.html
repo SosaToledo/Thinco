@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<title>Think In Code</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+<!-- Cambia la imagen Parallax desde acá. Me gusta la que esta igual. -->
+<style media="screen">
+  .bgimg-2 {
+      background-image: url("img/developer04.jpg");
+      min-height: 400px;
+  }
+  .precios-container, .evento-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .precios-container div{
+    width: 260px;
+  }
+  .evento-container div{
+    width: 450px;
+  }
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">INICIO</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> NOSOTROS</a>
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PAGINAS WEB</a>
+    <a href="#eventos" class="w3-bar-item w3-button">PAGINAS DE EVENTOS</a>
+    <a href="#aplicacionesAndroid" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-android"></i> APLICACIONES ANDROID</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">NOSOTROS</a>
+    <a href="#paginasWeb" class="w3-bar-item w3-button" onclick="toggleFunction()">PAGINAS WEB</a>
+    <a href="#aplicacionesAndroid" class="w3-bar-item w3-button" onclick="toggleFunction()">APLICACIONES ANDROID</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div id="home" class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">PAGINAS WEB</span>
+  </div>
+</div>
+<!-- Caracteristicas del serivicio -->
+<div class="w3-container">
+  <h4>Desc</h4>
+  <div id="serv1" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
+
+  </div>
+  <div id="serv2" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
+
+  </div>
+  <div id="serv3" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
+
+  </div>
+  <div id="serv4" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
+
+  </div>
+  <div id="serv5" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
+
+  </div>
+  <div id="serv6" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
+
+  </div>
+</div>
+<!-- Precios de las paginas -->
+<div id="precios" class="precios-container">
+  <h1 style="width:100%;">PRECIOS</h1>
+  <div class="w3-card-2 w3-margin  w3-display-container">
+    <header class="w3-container w3-blue">
+      <h1>Info-Estetica</h1>
+    </header>
+
+    <div class="">
+      <ul class="w3-ul w3-hoverable">
+        <li>Desc</li>
+        <li>30 fotos</li>
+        <li>2 sliders</li>
+        <li>5 videos</li>
+        <li>Hasta 4 paginas + quienes somos + contactos</li>
+        <li>Actualización de contenido por 6 meses</li>
+        <li style="margin-bottom:40px;">Hosting + dominio por un año</li>
+      </ul>
+    </div>
+
+    <footer class="w3-container w3-blue w3-display-bottomleft" style="width:100%;">
+      <h5>$5500</h5>
+    </footer>
+    <footer class="w3-container w3-blue w3-display-bottomright">
+      <h5>Plantillas</h5>
+    </footer>
+  </div>
+  <div class="w3-card-2 w3-margin w3-display-container">
+    <header class="w3-container w3-blue">
+      <h1>Info-Estetica-moderna</h1>
+    </header>
+
+    <div class="">
+      <ul class="w3-ul w3-hoverable">
+        <li>Desc</li>
+        <li>60 fotos</li>
+        <li>4 sliders</li>
+        <li>10 videos</li>
+        <li>Animaciones y efectos</li>
+        <li>Hasta 8 paginas + quienes somos + contactos</li>
+        <li>Actualización de contenido por 1 año</li>
+        <li style="margin-bottom:40px;">Hosting + dominio por un año</li>
+      </ul>
+    </div>
+
+    <footer class="w3-container w3-blue w3-display-bottomleft" style="width:100%;">
+      <h5>$9000</h5>
+    </footer>
+    <footer class="w3-container w3-blue w3-display-bottomright">
+      <h5>Plantillas</h5>
+    </footer>
+  </div>
+  <div class="w3-card-2 w3-margin w3-display-container">
+    <header class="w3-container w3-blue">
+      <h1>Auto-administrable basica</h1>
+    </header>
+
+    <div class="">
+      <ul class="w3-ul w3-hoverable">
+        <li>Desc</li>
+        <li>40 fotos</li>
+        <li>3 sliders</li>
+        <li>8 videos</li>
+        <li>Hasta 5 paginas + quienes somos + contactos</li>
+        <li>Actualización de contenido por 6 meses</li>
+        <li style="margin-bottom:40px;">Hosting + dominio por un año</li>
+      </ul>
+    </div>
+
+    <footer class="w3-container w3-blue w3-display-bottomleft" style="width:100%;">
+      <h5>$12000</h5>
+    </footer>
+    <footer class="w3-container w3-blue w3-display-bottomright">
+      <h5>Plantillas</h5>
+    </footer>
+  </div>
+  <div class="w3-card-2 w3-margin w3-display-container">
+    <header class="w3-container w3-blue">
+      <h1>Auto-administrable personalizada</h1>
+    </header>
+
+    <div class="">
+      <ul class="w3-ul w3-hoverable">
+        <li>Desc</li>
+        <li>80 fotos</li>
+        <li>6 sliders</li>
+        <li>15 videos</li>
+        <li>Animaciones y efectos</li>
+        <li>Hasta 10 paginas + quienes somos + contactos</li>
+        <li>Actualización de contenido por 1 año</li>
+        <li style="margin-bottom:40px;">Hosting + dominio por un año</li>
+      </ul>
+    </div>
+
+    <footer class="w3-container w3-blue w3-display-bottomleft" style="width:100%;">
+      <h5>$15000</h5>
+    </footer>
+    <footer class="w3-container w3-blue w3-display-bottomright">
+      <h5>Plantillas</h5>
+    </footer>
+  </div>
+</div>
+<!-- Seccion de eventos -->
+<div id="eventos" class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">PAGINA PARA TU EVENTO</span>
+  </div>
+</div>
+<div class="w3-container">
+  <p style="width:100%;" class="w3-margin">Si estas pensando realizar un evento, en esta epoca no podes dejar de tener una buena pagina web para que la gente se informe, promocinarla, entre otras. Por eso decidimos ayudarte con una que tenga las siguientes funciones</p>
+  <!-- Acá pone el slider que te gusta con cuatro servicios que te digo mas adelante.
+      habria que ponerles una imagen y el texto en el medio (desc tmb estaría)
+      Galeria
+      (si una imagen dice mas que mil palabras, imaginate más...)
+      Interacion con redes sociales
+      (antes del evento comparti los progresos, y tambien durante¿Por que no?)
+      Cuenta atras
+      (que lo primeron que vean se cuanto falta para mostrar tu evento)
+      Buzon de felicitaciones
+      (que la gente te llene de buena energia, durante los preparativos)
+      -->
+    <h1>DONDE IRIA LA GALERIA</h1>
+    <h4 style="width:100%">Ademas...</h4>
+  <div class="evento-container">
+    <div class="w3-card-2 w3-container w3-margin">
+      <ul class="w3-ul">
+        <li>Video</li>
+        <li>Ubicación</li>
+        <li>Entradas/invitaciones con EventBrite</li>
+      </ul>
+    </div>
+    <div class="w3-card-2 w3-container w3-margin">
+      <ul class="w3-ul">
+        <li>Invitaciones por correo</li>
+        <li>Cuenta tu historia</li>
+        <li>Momento Especial</li>
+      </ul>
+    </div>
+    <!-- No me convence pero te tiro la idea. -->
+    <div class="w3-blue w3-container w3-padding" style="width:100%">
+      <h2>Consultenos por su pagina</h2>
+    </div>
+  </div>
+</div>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Pergamino, Buenos Aires.<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: Contacto@Thinkincode.com.ar<br>
+        <a href="https://www.facebook.com/thinkincode"><i class="fa fa-facebook-official  fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Thinco <br></a>
+        <a href="https://twitter.com/Think_In_Code"><i class="fa fa-twitter  fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> @Think_In_Code <br></a>
+      </div>
+      <p>Dejanos un mensaje y nos contactaremos contigo:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> Enviar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-5 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class=""><i class="fa fa-arrow-up w3-margin-right"></i>Subir</a>
+</footer>
+
+<script type="text/javascript">
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+      }
+  }
+
+</script>
+</body>
+</html>
