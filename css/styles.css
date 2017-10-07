@@ -68,14 +68,21 @@ a:hover{
   margin-top:25px;
 }
 
-.w3-container > .container i{
+.w3-container .row i, .w3-container:not(:last-of-type) .w3-row i{
   font-size: 64px;
   margin: auto;
   display: block;
   text-align: center;
 }
-.w3-container > .container p{
+.w3-container .row p{
   text-align: center;
+}
+.w3-container .w3-row p{
+  text-align: left;
+  margin-top: 10px;
+}
+.card{
+  min-height: 395px;
 }
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
@@ -99,4 +106,12 @@ a:hover{
       margin: auto;
       float: none;
     }
+    .card{
+      min-height: 200px;
+    }
+}
+@media only screen and (max-device-width: 950px) {
+  .card{
+    min-height: 300px;
+  }
 }
