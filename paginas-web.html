@@ -18,16 +18,16 @@
 <!-- Cambia la imagen Parallax desde acá. Me gusta la que esta igual. -->
 <style media="screen">
   .bgimg-2 {
-      background-image: url("img/developer04.jpg");
-      min-height: 400px;
+      background-image: url("img/developer02.jpg");
+      min-height: 100%;
   }
   .precios-container, .evento-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .precios-container div{
-    width: 260px;
+  .precios-container > div{
+    width: 24%;
   }
   .evento-container div{
     width: 450px;
@@ -41,62 +41,87 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="index.html" class="w3-bar-item w3-button">INICIO</a>
+    <a href="#home" class="w3-bar-item w3-button">INICIO</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> NOSOTROS</a>
-    <a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PAGINAS WEB</a>
-    <a href="#eventos" class="w3-bar-item w3-button">PAGINAS DE EVENTOS</a>
+    <a href="#paginasWeb" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-desktop"></i> PAGINAS WEB</a>
+    <a href="paginas-web.html#eventos" class="w3-bar-item w3-button"><i class="fa fa-birthday-cake"></i> PAGINAS PARA EVENTOS</a>
     <a href="#aplicacionesAndroid" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-android"></i> APLICACIONES ANDROID</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">NOSOTROS</a>
-    <a href="#paginasWeb" class="w3-bar-item w3-button" onclick="toggleFunction()">PAGINAS WEB</a>
-    <a href="#aplicacionesAndroid" class="w3-bar-item w3-button" onclick="toggleFunction()">APLICACIONES ANDROID</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> NOSOTROS</a>
+    <a href="#paginasWeb" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-desktop"></i> PAGINAS WEB</a>
+    <a href="#paginasWeb" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-birthday-cake"></i> PAGINAS PARA EVENTOS</a>
+    <a href="#aplicacionesAndroid" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-android"></i> APLICACIONES ANDROID</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> CONTACTO</a>
   </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div id="home" class="bgimg-2 w3-display-container w3-opacity-min">
+<div id="" class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">PAGINAS WEB</span>
   </div>
 </div>
 <!-- Caracteristicas del serivicio -->
-<div class="w3-container">
-  <h4>Desc</h4>
-  <div id="serv1" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
+<div class=" w3-content w3-container">
+  <p class="w3-center" style="margin-top:30px;">Hoy en dia el 80% de las personas acceden a internet desde un celular y la computadora esta quedando para usos laborales, tus potenciales clientes y los que ya tenes estan buscandote desde un telefono, asegurate que puedan tener la mejor experiencia al visitarte con una web que se adapte a los celulares y tambien a tablets. Todas las grandes empresas tienen sus sitios para poder dejar en claro quienes son y que hacen, vos no te tenes que quedar atras. <br> Un sitio no solo sirve como publicidad y posicionamiento para tu empresa o Pyme, tambien podes pensar en vender atraves de la misma, hacer tu busqueda de empleados atraves de tu sitio o porque no si sos un pionero en tu ciudad hacer tu propio cv virtual con muestras de tu trabajo y un estilo unico que no va a pasar desapercibido.</p>
 
+  <div id="serv1" style="background-color:LightGrey;height:auto; margin-top:20px;" class="w3-card-2 w3-container w3-row">
+    <div class="w3-col m2 w3-right">
+      <i class="fa fa-bullhorn" style="font-size:64px;width:64px;margin-top:20px;"></i>
+    </div>
+    <p class="w3-col m10">Vas a poder estar midiendo en tiempo real el impacto de tu sitio en fechas claves o durante promociones, con herramientas de Google no vas a tener duda si tu campaña va por el buen camino, podes revisar la fuente de tus visitas, si estan viendote desde un celular o una pc, los paises en los que se encuentran tus visitantes y mucho mas.</p>
   </div>
-  <div id="serv2" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
-
+  <div id="serv2" style="background-color: LightGrey;height:auto; margin-top:20px;" class="w3-card-2 w3-container w3-row">
+    <div class="w3-col m2 w3-left">
+      <i class="fa fa-child" style="font-size:64px;width:64px;"></i>
+    </div>
+    <p class="w3-col m10">Nosotros sabemos que lo importante esta en los celulares asique te brindamos diseños que se adaptan a pantallas pequeñas y medianas como una tablet, todo en un mismo sitio.</p>
   </div>
-  <div id="serv3" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
-
+  <div id="serv3" style="background-color: LightGrey;height:auto; margin-top:20px;" class="w3-card-2 w3-row w3-container">
+    <div class="w3-col m2 w3-right">
+      <i class="fa fa-newspaper-o" style="font-size:64px;width:64px;margin-top:30px;"></i>
+    </div>
+    <p class="w3-col m10">Si solamente pensas en crear una web para darte a conocer como empresa, tenes un producto que queres promocionar de manera unica o queres armar un diario, blog personal o lo que se te ocurra, nosotros te brindamos la solucion completa a tus problemas tenemos diseños elegantes, modernos, sobrios y mas. Si lo que tenes en mente no esta dentro de los ejemplos podemos hacerte un diseño a tu medida y que cumpla con tus necesidades.</p>
   </div>
-  <div id="serv4" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
-
+  <div id="serv4" style="background-color: LightGrey;height:auto; margin-top:20px;" class="w3-card-2 w3-row w3-container">
+    <div class="w3-col m2 w3-left">
+      <i class="material-icons" style="font-size:64px;width:64px;margin-top:30px;">contact_mail</i>
+    </div>
+    <p class="w3-col m10">El correo corporativo es una señal profesionalidad y de implantacion de tu marca personal. Aunque Gmail o Yahoo son empresas conocidas, lo deseable es que cuando el cliente trate contigo no esté viendo el nombre de otra empresa.¿Vos pondrias el logotipo o el nombre de otra empresa, aunque no te haga la competencia, en tu negocio? Pues tampoco queda bien para tus correos.</p>
   </div>
-  <div id="serv5" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
-
+  <div id="serv5" style="background-color: LightGrey;height:auto; margin-top:20px;" class="w3-card-2 w3-row w3-container">
+    <div class="w3-col m2 w3-right">
+      <i class="fa fa-clock-o" style="font-size:64px;width:64px;margin-top:15px;"></i>
+    </div>
+    <p class="w3-col m10">En Thinco trabajamos siguiendo los standares impuestos por Google y las empresas lideres en internet para que obtengas el mejor posicionamiento en buscadores, el menor tiempo de carga y tu sitio sea compatible con todos los dispositivos y navegadores.</p>
   </div>
-  <div id="serv6" style="background-color: grey;height:150px; margin-top:20px;" class="w3-card-2">
-
+  <div id="serv6" style="background-color:LightGrey;height:auto; margin-top:20px;" class="w3-card-2 w3-row w3-container">
+    <div class="w3-col m2 w3-left">
+      <i class="fa fa-bug" style="font-size:64px;width:64px;margin-top:20px;"></i>
+    </div>
+    <p class="w3-col m10">Nosotros nos comprometemos a brindarte el mejor soporte tecnico para que estes tranquilo que tu inversion fue la correcta. Ofrecemos un periodo de tiempo para que realices los cambios que creas convenientes en el sitio, estaremos a tu disposicion todo el tiempo.</p>
   </div>
 </div>
 <!-- Precios de las paginas -->
+<div class="bgimg-6 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">PRECIOS</span>
+  </div>
+</div>
+
 <div id="precios" class="precios-container">
-  <h1 style="width:100%;">PRECIOS</h1>
-  <div class="w3-card-2 w3-margin  w3-display-container">
-    <header class="w3-container w3-blue">
-      <h1>Info-Estetica</h1>
+  <div class="w3-card-2  w3-display-container">
+    <header class="w3-container" style="background-color: #D6EAF8;">
+      <h1>Informativa basica</h1>
     </header>
 
     <div class="">
       <ul class="w3-ul w3-hoverable">
-        <li>Desc</li>
+        <li>Correo corporativo gratis</li>
         <li>30 fotos</li>
         <li>2 sliders</li>
         <li>5 videos</li>
@@ -106,21 +131,20 @@
       </ul>
     </div>
 
-    <footer class="w3-container w3-blue w3-display-bottomleft" style="width:100%;">
+    <footer class="w3-container w3-display-bottomleft" style="width:100%;background-color:#D6EAF8;">
       <h5>$5500</h5>
     </footer>
-    <footer class="w3-container w3-blue w3-display-bottomright">
-      <h5>Plantillas</h5>
+    <footer class="w3-container w3-display-bottomright" style="background-color: #D6EAF8;">
+      <h5>Ejemplos</h5>
     </footer>
   </div>
-  <div class="w3-card-2 w3-margin w3-display-container">
-    <header class="w3-container w3-blue">
-      <h1>Info-Estetica-moderna</h1>
+  <div class="w3-card-2 w3-display-container">
+    <header class="w3-container" style="background-color:#85C1E9;">
+      <h1>Informativa estatica premium</h1>
     </header>
-
     <div class="">
       <ul class="w3-ul w3-hoverable">
-        <li>Desc</li>
+        <li>Correo corporativo gratis</li>
         <li>60 fotos</li>
         <li>4 sliders</li>
         <li>10 videos</li>
@@ -130,22 +154,21 @@
         <li style="margin-bottom:40px;">Hosting + dominio por un año</li>
       </ul>
     </div>
-
-    <footer class="w3-container w3-blue w3-display-bottomleft" style="width:100%;">
+    <footer class="w3-container w3-display-bottomleft" style="width:100%;background-color:#85C1E9;">
       <h5>$9000</h5>
     </footer>
-    <footer class="w3-container w3-blue w3-display-bottomright">
-      <h5>Plantillas</h5>
+    <footer class="w3-container w3-display-bottomright" style="background-color:#85C1E9;">
+      <h5>Ejemplos</h5>
     </footer>
   </div>
-  <div class="w3-card-2 w3-margin w3-display-container">
-    <header class="w3-container w3-blue">
+  <div class="w3-card-2 w3-display-container">
+    <header class="w3-container" style="background-color:#3498DB;">
       <h1>Auto-administrable basica</h1>
     </header>
 
     <div class="">
       <ul class="w3-ul w3-hoverable">
-        <li>Desc</li>
+        <li>Correo corporativo gratis</li>
         <li>40 fotos</li>
         <li>3 sliders</li>
         <li>8 videos</li>
@@ -155,21 +178,21 @@
       </ul>
     </div>
 
-    <footer class="w3-container w3-blue w3-display-bottomleft" style="width:100%;">
+    <footer class="w3-container w3-display-bottomleft" style="width:100%;background-color:#3498DB;">
       <h5>$12000</h5>
     </footer>
-    <footer class="w3-container w3-blue w3-display-bottomright">
-      <h5>Plantillas</h5>
+    <footer class="w3-container w3-display-bottomright" style="background-color:#3498DB;">
+      <h5>Ejemplos</h5>
     </footer>
   </div>
-  <div class="w3-card-2 w3-margin w3-display-container">
+  <div class="w3-card-2 w3-display-container">
     <header class="w3-container w3-blue">
       <h1>Auto-administrable personalizada</h1>
     </header>
 
     <div class="">
       <ul class="w3-ul w3-hoverable">
-        <li>Desc</li>
+        <li>Correo corporativo gratis</li>
         <li>80 fotos</li>
         <li>6 sliders</li>
         <li>15 videos</li>
@@ -184,20 +207,20 @@
       <h5>$15000</h5>
     </footer>
     <footer class="w3-container w3-blue w3-display-bottomright">
-      <h5>Plantillas</h5>
+      <h5>Ejemplos</h5>
     </footer>
   </div>
 </div>
 <!-- Seccion de eventos -->
-<div id="eventos" class="bgimg-2 w3-display-container w3-opacity-min">
+<div id="eventos" class="bgimg-7 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">PAGINA PARA TU EVENTO</span>
+    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">UNA PAGINA PARA TU EVENTO</span>
   </div>
 </div>
 <div class="w3-container">
-  <p style="width:100%;" class="w3-margin">Si estas pensando realizar un evento, en esta epoca no podes dejar de tener una buena pagina web para que la gente se informe, promocinarla, entre otras. Por eso decidimos ayudarte con una que tenga las siguientes funciones</p>
+  <p style="width:100%;" class="w3-margin w3-center">Si estas pensando realizar un evento, en esta epoca no podes dejar de tener una buena pagina web para que la gente se informe, promocinarla, entre otras. Por eso decidimos ayudarte con una que tenga las siguientes funciones</p>
   <!-- Acá pone el slider que te gusta con cuatro servicios que te digo mas adelante.
-      habria que ponerles una imagen y el texto en el medio (desc tmb estaría)
+      habria que ponerles una imagen y el texto en el medio (Correo corporativo gratis tmb estaría)
       Galeria
       (si una imagen dice mas que mil palabras, imaginate más...)
       Interacion con redes sociales
