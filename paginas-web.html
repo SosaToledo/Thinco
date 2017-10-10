@@ -14,6 +14,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+<script src="js/owl.carousel.js"></script>
+
 <link rel="stylesheet" href="css/styles.css">
 <!-- Cambia la imagen Parallax desde acá. Me gusta la que esta igual. -->
 <style media="screen">
@@ -24,7 +29,7 @@
   }
 }
   .bgimg-2 {
-      background-image: url("img/developer02.jpg");
+      background-image: url("img/developer08.jpg");
       min-height: 100%;
   }
   .precios-container, .evento-container{
@@ -33,7 +38,8 @@
     justify-content: space-around;
   }
   .precios-container > div{
-    width: 24%;
+    width: 310px;
+    margin: 5px 0px;
   }
   .evento-container div{
     width: 450px;
@@ -66,9 +72,9 @@
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div id="" class="bgimg-2 w3-display-container w3-opacity-min">
+<div id="paginaswebs" class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">PAGINAS WEB</span>
+    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">ENCONTRA LA PAGINA QUE NECESITAS</span>
   </div>
 </div>
 <!-- Caracteristicas del serivicio -->
@@ -113,7 +119,7 @@
   </div>
 </div>
 <!-- Precios de las paginas -->
-<div class="bgimg-6 w3-display-container w3-opacity-min">
+<div id="precios" class="bgimg-6 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">PRECIOS</span>
   </div>
@@ -121,8 +127,8 @@
 
 <div id="precios" class="precios-container w3-container">
   <div class="w3-card-2  w3-display-container">
-    <header class="w3-container" style="background-color: #D6EAF8;">
-      <h1>Informativa basica</h1>
+    <header class="w3-container" style="background-color: #bbdefb;">
+      <h1 class="w3-center">Informativa estatica basica</h1>
     </header>
 
     <div class="">
@@ -137,16 +143,16 @@
       </ul>
     </div>
 
-    <footer class="w3-container w3-display-bottomleft" style="width:100%;background-color:#D6EAF8;">
+    <footer class="w3-container w3-display-bottomleft" style="width:100%;background-color:#bbdefb;">
       <h5>$5500</h5>
     </footer>
-    <footer class="w3-container w3-display-bottomright" style="background-color: #D6EAF8;">
+    <footer class="w3-container w3-display-bottomright" style="background-color: #bbdefb;">
       <h5>Ejemplos</h5>
     </footer>
   </div>
   <div class="w3-card-2 w3-display-container">
-    <header class="w3-container" style="background-color:#85C1E9;">
-      <h1>Informativa estatica premium</h1>
+    <header class="w3-container" style="background-color:#90caf9;">
+      <h1 class="w3-center">Informativa estatica premium</h1>
     </header>
     <div class="">
       <ul class="w3-ul w3-hoverable">
@@ -160,16 +166,16 @@
         <li style="margin-bottom:40px;">Hosting + dominio por un año</li>
       </ul>
     </div>
-    <footer class="w3-container w3-display-bottomleft" style="width:100%;background-color:#85C1E9;">
+    <footer class="w3-container w3-display-bottomleft" style="width:100%;background-color:#90caf9;">
       <h5>$9000</h5>
     </footer>
-    <footer class="w3-container w3-display-bottomright" style="background-color:#85C1E9;">
+    <footer class="w3-container w3-display-bottomright" style="background-color:#90caf9;">
       <h5>Ejemplos</h5>
     </footer>
   </div>
   <div class="w3-card-2 w3-display-container">
-    <header class="w3-container" style="background-color:#3498DB;">
-      <h1>Auto-administrable basica</h1>
+    <header class="w3-container" style="background-color:#64b5f6;">
+      <h1 class="w3-center">Autoadministrable basica</h1>
     </header>
 
     <div class="">
@@ -184,16 +190,16 @@
       </ul>
     </div>
 
-    <footer class="w3-container w3-display-bottomleft" style="width:100%;background-color:#3498DB;">
+    <footer class="w3-container w3-display-bottomleft" style="width:100%;background-color:#64b5f6;">
       <h5>$12000</h5>
     </footer>
-    <footer class="w3-container w3-display-bottomright" style="background-color:#3498DB;">
+    <footer class="w3-container w3-display-bottomright" style="background-color:#64b5f6;">
       <h5>Ejemplos</h5>
     </footer>
   </div>
   <div class="w3-card-2 w3-display-container">
-    <header class="w3-container w3-blue">
-      <h1>Auto-administrable personalizada</h1>
+    <header class="w3-container" style="background-color:#42a5f5;">
+      <h1 class="w3-center">Autoadministrable personalizada</h1>
     </header>
 
     <div class="">
@@ -209,22 +215,28 @@
       </ul>
     </div>
 
-    <footer class="w3-container w3-blue w3-display-bottomleft" style="width:100%;">
+    <footer class="w3-container w3-display-bottomleft" style="width:100%;background-color:#42a5f5;">
       <h5>$15000</h5>
     </footer>
-    <footer class="w3-container w3-blue w3-display-bottomright">
+    <footer class="w3-container w3-display-bottomright" style="background-color:#42a5f5;">
       <h5>Ejemplos</h5>
     </footer>
   </div>
 </div>
+<div class="w3-center" style="margin-top:20px">
+  <i class="fa fa-hand-stop-o w3-xxlarge"></i>
+</div>
+<div class="w3-panel w3-blue w3-leftbar w3-border-blue w3-margin w3-center w3-hover-opacity-off">
+  <h4>Si las ofertas anteriores no suplieron tu necesidad y queres algo más sencillo o más complejo, no dudes en comunicarte.</h4>
+</div>
 <!-- Seccion de eventos -->
 <div id="eventos" class="bgimg-7 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">UNA PAGINA PARA TU EVENTO</span>
+    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px #444">UNA PAGINA PARA TU EVENTO</span>
   </div>
 </div>
 <div class="w3-container">
-  <p style="width:100%;" class="w3-margin w3-center">Si estas pensando realizar un evento, en esta epoca no podes dejar de tener una buena pagina web para que la gente se informe, promocinarla, entre otras. Por eso decidimos ayudarte con una que tenga las siguientes funciones</p>
+  <p class="w3-center w3-content" style="margin:10px auto;">Si estas pensando realizar un evento, en esta epoca no podes dejar de tener una buena pagina web para que la gente se informe, promocinarla, entre otras. Por eso decidimos ayudarte con una que tenga las siguientes funciones</p>
   <!-- Acá pone el slider que te gusta con cuatro servicios que te digo mas adelante.
       habria que ponerles una imagen y el texto en el medio (Correo corporativo gratis tmb estaría)
       Galeria
@@ -236,33 +248,148 @@
       Buzon de felicitaciones
       (que la gente te llene de buena energia, durante los preparativos)
       -->
-    <h1>DONDE IRIA LA GALERIA</h1>
-    <h4 style="width:100%">Ademas...</h4>
-  <div class="evento-container">
-    <div class="w3-card-2 w3-container w3-margin">
-      <ul class="w3-ul">
-        <li>Video</li>
-        <li>Ubicación</li>
-        <li>Entradas/invitaciones con EventBrite</li>
-      </ul>
+      <div class="owl-carousel comentarios w3-padding-64" style="max-width:80%; margin:auto; z-index:0">
+        <div class="slides w3-display-container">
+          <img id="img1" class="w3-opacity" src="img/developer14.jpg" style="width:100%;position:absolute;">
+          <div class="w3-display-middle">
+            <h2  style="color: white;text-shadow:2px 2px black;text-align:center">GALERIA</h2>
+            <h4  style="color: white;text-shadow:2px 2px black;text-align:center" class="w3-hide-small"><br>si una imagen dice mas que mil palabras, imagina más...</h4>
+          </div>
+        </div>
+        <div class="slides w3-display-container">
+          <img id="img2" class="w3-opacity" src="img/developer13.jpg" style="width:100%;position:absolute;">
+          <div class="w3-display-middle">
+            <h2  style="color: white;text-shadow:2px 2px black;text-align:center">INTERACCIÓN EN LAS REDES</h2>
+            <h4  style="color: white;text-shadow:2px 2px black;text-align:center" class="w3-hide-small"><br>Para antes y durante el evento las fotos que compartan con tu Hashtag la vean en todos lados.</h4>
+          </div>
+        </div>
+        <div class="slides w3-display-container">
+          <img id="img3" class="w3-opacity" src="img/developer12.jpg" style="width:100%;">
+          <div class="w3-display-middle">
+            <h2  style="color: white;text-shadow:2px 2px black;text-align:center">CUENTA ATRAS.</h2>
+            <h4  style="color: white;text-shadow:2px 2px black;text-align:center" class="w3-hide-small"><br>Asegurate que todos se mueran por que llegue el dia deseado y que nadie se olvide esa fecha especial.</h4>
+          </div>
+        </div>
+        <div class="slides w3-display-container">
+          <img id="img4" class="w3-opacity" src="img/developer11.jpg" style="width:100%;position:absolute;">
+          <div class="w3-display-middle">
+            <h2  style="color: white;text-shadow:2px 2px black;text-align:center">BUZON DE MENSAJES Y FELICITACIONES.</h2>
+            <h4  style="color: white;text-shadow:2px 2px black;text-align:center" class="w3-hide-small"><br>Todos pueden escribirte un mensaje y solo vos va a poder seleccionar cuales van a aparecer para que todo el mundo los lea.</h4>
+          </div>
+        </div>
+      </div>
+    <h4 class="w3-center w3-content"> Tambien incluye...</h4>
+    <div class="owl-carousel agregado w3-padding-64" style="max-width:80%; margin:auto; z-index:0">
+      <div class="slides w3-display-container w3-center">
+        <div class="">
+          <i class="fa fa-youtube-play w3-jumbo"></i>
+        </div>
+        <h4>Video</h4>
+      </div>
+      <div class="slides w3-display-container w3-center">
+        <div class="">
+          <i class="material-icons w3-jumbo">location_on</i>
+        </div>
+        <h4>Ubicación</h4>
+      </div>
+      <div class="slides w3-display-container w3-center">
+        <div class="">
+          <i class="fa fa-ticket w3-jumbo"></i>
+        </div>
+        <h4>Entradas/invitaciones con EventBrite</h4>
+      </div>
+      <div class="slides w3-display-container w3-center">
+        <div class="">
+          <i class="material-icons w3-jumbo">markunread_mailbox</i>
+        </div>
+        <h4>Invitaciones por correo</h4>
+      </div>
+      <div class="slides w3-display-container w3-center">
+        <div class="">
+          <i class="fa fa-history w3-jumbo"></i>
+        </div>
+        <h4>Cuenta tu historia</h4>
+      </div>
+      <div class="slides w3-display-container w3-center">
+        <div class="">
+          <i class="fa fa-heartbeat w3-jumbo"></i>
+        </div>
+        <h4>Momento especial</h4>
+      </div>
     </div>
-    <div class="w3-card-2 w3-container w3-margin">
-      <ul class="w3-ul">
-        <li>Invitaciones por correo</li>
-        <li>Cuenta tu historia</li>
-        <li>Momento Especial</li>
-      </ul>
-    </div>
-    <!-- No me convence pero te tiro la idea. -->
-    <div class="w3-blue w3-container w3-padding" style="width:100%">
-      <h2>Consultenos por su pagina</h2>
-    </div>
+
+    <script>
+      $('.comentarios').owlCarousel({
+        loop:true,
+        items:2,
+        margin:15,
+        // autoHeight:true,
+        autoplay:true,
+        autoplayTimeout:7000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+            },
+            770:{
+                items:1,
+                nav:false
+            },
+            1000:{
+                items:1,
+                nav:false,
+                loop:true
+            }
+        }
+
+      })
+      $('.agregado').owlCarousel({
+        loop:true,
+        items:6,
+        margin:5,
+        // autoHeight:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+            },
+            770:{
+                items:2,
+                nav:false
+            },
+            1000:{
+                items:4,
+                nav:false,
+                loop:true
+            }
+        }
+
+      })
+    </script>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 1px 0 #444">CONTACTENOS</span>
   </div>
 </div>
+
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
 
   <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large" style="width:90%;height:400px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52989.52423201609!2d-60.60044919011625!3d-33.89363874606327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b84aad3ef60a31%3A0x481ac3277962e9c5!2sPergamino%2C+Provincia+de+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1506908262534" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Pergamino, Buenos Aires.<br>
@@ -290,7 +417,7 @@
 </div>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-5 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class=""><i class="fa fa-arrow-up w3-margin-right"></i>Subir</a>
+  <a href="#paginaswebs" class=""><i class="fa fa-arrow-up w3-margin-right"></i>Subir</a>
 </footer>
 
 <script type="text/javascript">
