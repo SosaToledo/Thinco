@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript" src="js/funciones.js"></script>
 
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -440,7 +441,18 @@
           navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
       }
   }
-
+  $(window).scroll(function(e)
+  {
+  	if( $("#serv1").isInScene())
+  	{
+  		$("#serv1").addClass("enterRight");
+    	$("#serv3").addClass("enterRight");
+      $("#serv5").addClass("enterRight");
+      $("#serv2").addClass("enterLeft");
+    	$("#serv4").addClass("enterLeft");
+      $("#serv6").addClass("enterLeft");
+  	}
+  });
 </script>
 </body>
 </html>

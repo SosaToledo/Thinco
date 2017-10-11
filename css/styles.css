@@ -151,6 +151,50 @@ a:hover{
     min-height: 300px;
   }
 }
+.enterRight{
+  animation-name: deDerecha;
+  animation-duration: 1.5s;
+}
+@keyframes deDerecha {
+  from{
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.enterLeft{
+  animation-name: deIzquierda;
+  animation-duration: 1.5s;
+}
+@keyframes deIzquierda {
+  from{
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.enterTop{
+  animation-name: deArriba;
+  animation-duration: 1.5s;
+}
+
+@keyframes deArriba {
+  from{
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
 @media only screen and (max-device-width: 770px) {
   #img1{
     top: 0%;

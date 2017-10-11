@@ -13,9 +13,9 @@
 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+<script type="text/javascript" src="js/funciones.js"></script>
 <link rel="stylesheet" href="css/styles.css">
-<body>
+<body onscroll="algo()">
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -81,7 +81,7 @@
     <p class="w3-center">Te ofrecemos la mejor manera de llegar a tus clientes y hacer nuevos. Nuestras paginas tienen un diseño que se adapta para celulares y tablets asi nadie se va a perder tu negocio o marca.</p><br>
 
       <div class="row">
-        <div class="col-sm-6">
+        <div class="animacionSubir col-sm-6">
           <i class="fa fa-child"></i>
           <p>Diseños responsives para celulares y tablets.</p>
           <i class="fa fa-clock-o"></i>
@@ -89,7 +89,7 @@
           <i class="material-icons">contact_mail</i>
           <p>Correo corporativo gratuito.</p>
         </div>
-        <div class="col-sm-6">
+        <div class="animacionSubir col-sm-6">
           <i class="fa fa-newspaper-o"></i>
           <p>Sitios informativos, blogs, portales de noticias y mas.</p>
           <i class="fa fa-bug"></i>
@@ -111,13 +111,13 @@
   <p class="w3-center">Si queres llegar a millones de personas todo el tiempo o queres darle vida a esa nueva idea que pensaste imposible para tu empresa nosotros somos los indicados para llevar adelante tu idea.</p>
 
     <div class="row">
-      <div class="col-sm-6">
+      <div class="animacionSubir2 col-sm-6">
         <i class="material-icons">store</i>
         <p>Convertite en el negocio con mas prescencia de todos entre tus competidores</p>
         <i class="material-icons">work</i>
         <p>Aumenta la calidad del trabajo de tus empleados con una aplicacion que los ayude dia a dia.</p>
       </div>
-      <div class="col-sm-6">
+      <div class="animacionSubir2 col-sm-6">
         <i class="material-icons">supervisor_account</i>
         <p>Crea una comunidad entre tus clientes haciendo que interactuen con tu empresa y entre ellos.</p>
         <i class="material-icons">shopping_cart</i>
@@ -196,7 +196,17 @@ function myFunction() {
         navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
     }
 }
-
+$(window).scroll(function(e)
+{
+	if( $(".animacionSubir").isInScene())
+	{
+		$(".animacionSubir").addClass("enterTop");
+	}
+  if( $(".animacionSubir2").isInScene())
+	{
+		$(".animacionSubir2").addClass("enterTop");
+	}
+});
 </script>
 
 <!-- Add Google Maps -->
