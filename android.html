@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+<script type="text/javascript" src="js/funciones.js"></script>
 <link rel="stylesheet" href="css/styles.css">
 <body>
 
@@ -55,24 +55,24 @@
 <div class="w3-container" style="padding-bottom:64px;">
   <div class="w3-row">
     <div class="w3-col m6 l3" style="height:100%;">
-      <div class="w3-card w3-padding card" style="margin:5px;">
+      <div id="serv1" class="w3-card w3-padding card" style="margin:5px;">
         <i class="fa fa-money" style="font-size:64px;"></i>
         <p>Eficaz herramienta publicitaria: sobre todo, cuando estamos hablando de marketing e Internet una aplicacion que alcanza las 50.000 descargas en poco tiempo equivaldrían a una alta inversión publicitaria si lo comparamos con lograr el mismo alcanze en television o radio.</p>
       </div>
     </div>
-    <div class="w3-col m6 l3" style="height:100%;">
+    <div id="serv2" class="w3-col m6 l3" style="height:100%;">
       <div class="w3-card w3-padding card " style="margin:5px;">
         <i class="fa fa-cubes" style="font-size:64px;"></i>
         <p> Aportan un valor añadido: Más allá de la publicidad o de la mera presencia en dispositivos móviles, las aplicaciones tienen sentido en sí mismas. No se trata de duplicar el contenido de una web que el usuario ya puede consultar desde su ordenador. Tienen que ofrecer un plus. Aportar conocimiento o facilitarle la vida al usuario, dandole una satisfaccion desde el sillon de su casa o en cualquier sitio en que este</p>
       </div>
     </div>
-    <div class="w3-col m6 l3" style="height:100%;">
+    <div id="serv3" class="w3-col m6 l3" style="height:100%;">
       <div class="w3-card w3-padding card" style="margin:5px;">
         <i class="fa fa-rocket" style="font-size:64px;"></i>
         <p>Optimizan la gestión y facilitan los procesos: Aparte de un beneficio para el consumidor, también pueden ofrecer funcionalidades para la gestión interna de una organización. Tener toda la informacion necesaria fuera de la oficina o poder hacer que tus clientes se descargen una app para entender un proceso puede facilitarle la vida a tus empleados.</p>
       </div>
     </div>
-    <div class="w3-col m6 l3" style="height:100%;">
+    <div id="serv4" class="w3-col m6 l3" style="height:100%;">
       <div class="w3-card w3-padding card" style="margin:5px;">
         <i class="fa fa-area-chart" style="font-size:64px;"></i>
         <p>Podrás conseguir nuevos usuarios y retener a tu audiencia: Las aplicaciones móviles proporcionarán, además, la posibilidad de segmentar y llegar a los usuarios de diferentes perfiles dependiendo cómo usan la app: tiempo que pasan en ella, qué enlaces se pulsan más… Gracias a las notificaciones, podrás mandar mensajes personificados dependiendo de lugar que se encuentran, los gustos, la edad…</p>
@@ -148,7 +148,16 @@ function myFunction() {
         navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
     }
 }
-
+$(window).scroll(function(e)
+{
+  if( $("#serv1").isInScene())
+  {
+    $("#serv1").addClass("enterLeft");
+    $("#serv2").addClass("enterTop");
+    $("#serv3").addClass("enterTop");
+    $("#serv4").addClass("enterRight");
+  }
+});
 </script>
 
 <!-- Add Google Maps -->
