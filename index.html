@@ -1,29 +1,42 @@
 <!DOCTYPE html>
+
+
 <html>
 <title>Think In Code</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<script type="text/javascript" src="js/funciones.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon-192.png">
+
+
+<link rel="preload" href="https://www.w3schools.com/w3css/4/w3.css" as="style" onload="this.rel='stylesheet'">
+
+
+<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+ <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Lato" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Anton" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.rel='stylesheet'">
+
+<script type="text/javascript">
+  $.fn.extend({	isInScene : function(arg){	arg = arg || {};arg.desfase = arg.desfase || 0;arg.desfase = parseInt(arg.desfase,10);var pos_container = $(this).offset().top;var container_height = $(this).outerHeight();var pos_document = $(document).scrollTop();var window_height = $(window).height();return (pos_document+window_height > pos_container+arg.desfase && pos_container+container_height > pos_document+arg.desfase);}});
+</script>
+
+<style>
+ .bgimg-1{background-image:url(img/developer01.jpg);min-height:100%;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover}#home>div{width:100%;height:auto}#home>div>span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Anton',sans-serif;text-transform:uppercase;font-size:30pt}#home>div>img{position:absolute;width:40%;height:auto;top:50%;left:50%;transform:translate(-50%,-50%)}@media only screen and (max-device-width:1024px){.bgimg-1{background-attachment:scroll}#home>div>img{width:100%}#home>div>span{font-size:27px!important}}
+</style>
+
+<!-- <link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'"> -->
 <link rel="stylesheet" href="css/styles.css">
+
 <head>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107712661-2"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-107712661-2');
+  window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-107712661-2');
 </script>
 </head>
 <body onscroll="algo()">
