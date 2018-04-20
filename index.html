@@ -6,7 +6,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="shortcut icon" type="image/x-icon" href="img/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
 
 <link rel="preload" href="https://www.w3schools.com/w3css/4/w3.css" as="style" onload="this.rel='stylesheet'">
@@ -25,7 +33,7 @@
 </script>
 
 <style>
- .bgimg-1{background-image:url(img/developer01.jpg);min-height:100%;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover}#home>div{width:100%;height:auto}#home>div>span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Anton',sans-serif;text-transform:uppercase;font-size:30pt}#home>div>img{position:absolute;width:40%;height:auto;top:50%;left:50%;transform:translate(-50%,-50%)}@media only screen and (max-device-width:1024px){.bgimg-1{background-attachment:scroll}#home>div>img{width:100%}#home>div>span{font-size:27px!important}}
+ .bgimg-1{background-image:url(img/developer04.png);min-height:100%;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover}#home>div{width:100%;height:auto}#home>div>span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Anton',sans-serif;text-transform:uppercase;font-size:30pt}#home>div>img{position:absolute;width:40%;height:auto;top:50%;left:50%;transform:translate(-50%,-50%)}@media only screen and (max-device-width:1024px){.bgimg-1{background-attachment:scroll}#home>div>img{width:100%}#home>div>span{font-size:27px!important}}
 </style>
 
 <!-- <link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'"> -->
@@ -66,10 +74,9 @@
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="bgimg-1 w3-display-container " id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <img src="img/logo.png" class="w3-center w3-opacity">
-    <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity"> Think in Code </span>
+    <img src="img/logo.png" class="w3-center">
   </div>
 </div>
 
@@ -122,7 +129,7 @@
           <p>Informes sobre el impacto de tu sitio.</p>
         </div>
     </div>
-    <button class="w3-button w3-white w3-border boton"><a href="paginas-web.html">Cotiza tu pagina.</a></button>
+    <a href="paginas-web.html"><button class="w3-button w3-white w3-border boton">Cotiza tu pagina.</button></a>
 </div>
 
 <div class="bgimg-3 w3-display-container w3-opacity-min">
@@ -215,9 +222,9 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " axul";
     } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top axul", "");
     }
 }
 $(window).scroll(function(e)
