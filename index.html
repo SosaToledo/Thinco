@@ -38,8 +38,47 @@
 </script>
 
 <style>
- .bgimg-1{background-image:url(img/developer04.png);min-height:100%;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover}#home>div{width:100%;height:auto}#home>div>span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Anton',sans-serif;text-transform:uppercase;font-size:30pt}#home>div>img{position:absolute;width:40%;height:auto;top:50%;left:50%;transform:translate(-50%,-50%)}@media only screen and (max-device-width:1024px){.bgimg-1{background-attachment:scroll}#home>div>img{width:100%}#home>div>span{font-size:27px!important}}
-</style>
+ .bgimg-1{
+    background-image:url(img/developer04.png);
+    min-height:100%;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover
+}
+#home>div{
+    width:100%;
+    height:auto
+}
+#home>div>span{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-family:'Anton',sans-serif;
+    text-transform:uppercase;
+    font-size:30pt
+}
+#home>div>img{
+    position:absolute;
+    width:40%;
+    height:auto;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+@media only screen and (max-device-width:1024px){
+    .bgimg-1{
+        background-attachment:scroll
+    }
+    #home>div>img{
+        width:50%
+    }
+    #home>div>span{
+        font-size:27px!important
+    }
+}
+ </style>
 
 <!-- <link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'"> -->
 
@@ -68,7 +107,7 @@
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> NOSOTROS</a>
     <a href="#paginasWeb" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-desktop"></i> PAGINAS WEB</a>
     <a href="paginas-web.html#eventos" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-birthday-cake"></i> PAGINAS PARA EVENTOS</a>
@@ -79,7 +118,7 @@
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container " id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
+  <div class="w3-display-middle" style="">
     <img src="img/logo.png" class="w3-center">
   </div>
 </div>

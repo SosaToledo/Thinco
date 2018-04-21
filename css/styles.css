@@ -184,6 +184,9 @@ a:hover{
     /* color:#4E79E3 */
     color: white
 }
+#navDemo {
+    background-color: rgb(102, 138, 198) !important;
+}
 #paginasWeb  i:hover, #aplicacionesAndroid i:hover, i:hover{ 
     /* color:#4E79E3; */
     color:#668ac6;
