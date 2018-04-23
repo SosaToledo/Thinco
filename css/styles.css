@@ -96,7 +96,7 @@ a:hover{
         background-position:25% center
     }
     .boton{
-        display:block;
+        display:block !important;
         margin:auto;
         float:none
     }
@@ -176,9 +176,20 @@ a:hover{
         width:85%;
         text-align:center
     }
-}
 
+}
 /* colores del thinco nuevo */
+
+.w3-half{
+    margin-bottom: 8px;
+}
+a{
+    text-decoration: none !important;
+}
+.boton:hover{
+    background-color: rgb(102, 138, 198) !important;
+    color:white !important;
+}
 
 #myNavbar > a , #navDemo> a {
     /* color:#4E79E3 */
@@ -193,8 +204,4 @@ a:hover{
 }
 .axul{
     background-color: rgb(102, 138, 198);
-}
-.w3-button:hover{
-    background-color: rgb(102, 138, 198) !important;
-    color:white !important;
 }

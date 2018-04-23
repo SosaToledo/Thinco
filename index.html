@@ -5,9 +5,7 @@
   <title>Think In Code</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon-192.png">
-  
+    
   <meta name="description" content="desarrollo de paginas web y aplicaciones android, consulta tu precio.">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript,responsive, desarrollo a medida">
   <meta name="author" content="Thinco">
@@ -77,6 +75,10 @@
     #home>div>span{
         font-size:27px!important
     }
+}
+.boton:hover{
+    background-color: rgb(102, 138, 198) !important;
+    color:white !important;
 }
  </style>
 
@@ -172,7 +174,9 @@
           <p>Informes sobre el impacto de tu sitio.</p>
         </div>
     </div>
-    <a href="paginas-web.html"><button class="w3-button w3-white w3-border boton">Cotiza tu pagina.</button></a>
+    <a href="paginas-web.html">
+      <button class="w3-button w3-white w3-border boton ">Cotiza tu pagina.</button>
+    </a>
 </div>
 
 <div class="bgimg-3 w3-display-container w3-opacity-min">
@@ -235,7 +239,7 @@
             <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
           </div>
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
           </div>
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message">
