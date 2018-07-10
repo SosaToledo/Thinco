@@ -1,36 +1,16 @@
 <?php
-  $persona = $_POST["Nombre"];
-  $correo = $_POST["Email"];
-  $consulta = $_POST["Mensaje"];
-
+/**Toma de variables */
+  $persona = $_POST['Name'];
+  $correo = $_POST['Email'];
+  $consulta = $_POST['Message'];
+  
+/**Creación del documento */
   $destinatario = "contactothinco@gmail.com";
-  $asunto = "Consulta sobre piletas";
-  $cuerpo = '
-  <html>
-  <head>
-     <title>Consulta</title>
-  </head>
-  <body>
-  <h1>'.$persona.'</h1>
-  <p>
-  Responder a: '.$correo.'
-  </p>
-  <p>
-  '.$consulta.'
-  </p>
-  </body>
-  </html>
-  ';
-
-  //para el envío en formato HTML
-  $headers = "MIME-Version: 1.0\r\n";
-  $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
-
-  //dirección del remitente
-  $headers .= "From: ".$persona." < ".$correo." >\r\n";
+  $asunto = "Consulta para Thinco";
+  $cuerpo = $persona." envio desde: ".$correo." la consulta: ".$consulta;
 
 
-  mail($destinatario,$asunto,$cuerpo,$headers);
-  header('Location: contactos.php');
+  mail($destinatario,$asunto,$cuerpo);
+  header('location: index.html');
 
 ?>
