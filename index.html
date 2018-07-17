@@ -25,14 +25,19 @@
 <meta name="msapplication-TileImage" content="mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="preload" href="https://www.w3schools.com/w3css/4/w3.css" as="style" onload="this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Anton" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <script type="text/javascript">
   $.fn.extend({	isInScene : function(arg){	arg = arg || {};arg.desfase = arg.desfase || 0;arg.desfase = parseInt(arg.desfase,10);var pos_container = $(this).offset().top;var container_height = $(this).outerHeight();var pos_document = $(document).scrollTop();var window_height = $(window).height();return (pos_document+window_height > pos_container+arg.desfase && pos_container+container_height > pos_document+arg.desfase);}});
@@ -68,6 +73,13 @@
     left:50%;
     transform:translate(-50%,-50%)
 }
+.primerBoton{
+  margin-left: 10px;
+}
+.boton:hover{
+    background-color: rgb(102, 138, 198) !important;
+    color:white !important;
+}
 @media only screen and (max-device-width:1024px){
     .bgimg-1{
         background-attachment:scroll
@@ -78,10 +90,6 @@
     #home>div>span{
         font-size:27px!important
     }
-}
-.boton:hover{
-    background-color: rgb(102, 138, 198) !important;
-    color:white !important;
 }
  </style>
 
@@ -177,8 +185,11 @@
           <p>Informes sobre el impacto de tu sitio.</p>
         </div>
     </div>
+    <!-- <a class="" href="ejemplos.html">
+      <button class="w3-button w3-white w3-border boton primerBoton">Revisa nuestros ejemplos</button>
+    </a> -->
     <a href="paginas-web.html">
-      <button class="w3-button w3-white w3-border boton ">Cotiza tu pagina.</button>
+      <button class="w3-button w3-white w3-border boton ">Cotiza tu pagina</button>
     </a>
 </div>
 
@@ -205,7 +216,7 @@
         <p>Fideliza a tu clientela con ofertas y promociones unicas a traves de una app.</p>
       </div>
     </div>
-  <a href="android.html"><button class="w3-button w3-white w3-border boton">Ponele un precio a tu idea.</button></a>
+  <a href="android.html"><button class="w3-button w3-white w3-border boton">Ponele un precio a tu idea</button></a>
 
 </div>
 
